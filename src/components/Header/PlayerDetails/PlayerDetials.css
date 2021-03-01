@@ -1,0 +1,11 @@
+.player-info img{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 40%;
+}
+.player-info{
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    padding: 10px;
+}
