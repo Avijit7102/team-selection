@@ -1,12 +1,12 @@
 .player{
     display: flex;
     width: 100%;
+    margin-top: 20px;
 }
 .player-div{
     width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 5px solid peru;
     grid-gap: 5px;
     margin-left: 50px;
     margin-bottom: 30px;
@@ -14,11 +14,17 @@
 }
 .cart{
     width: 300px;
+    margin-left: 30px;
     border: 2px solid black;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 10px;
+    height: 100%;
 }
 .cart-length{
     text-align: center;
 }
-.card-details{
-    border: 1px solid peru
+#cart-details{
+    display: grid;
+    text-align: center;
 }
+

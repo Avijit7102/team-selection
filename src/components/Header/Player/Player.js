@@ -3,30 +3,28 @@ import './Player.css';
 import player from '../../../fakeData/Data.json';
 import PlayerDetails from '../PlayerDetails/PlayerDetails';
 import Cart from '../Cart/Cart';
+import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 const Player = () => {
     const [players, setPlayers] = useState([]);
     useEffect(()=>{
         setPlayers(player);
-        //console.log('players: ', players)
-        //console.log(player);
     },[])
     const [cart, setCart] = useState([]);
 
     const addPlayer = (player) => {
         const newCart = [...cart, player];
         setCart(newCart);
-        //console.log(player)
     }
     return (
         <div className="player">
             <div className="player-div">
-                {players.map(player => <PlayerDetails player = {player} addPlayer= {addPlayer}></PlayerDetails>)}
+                {players.map(player => <PlayerDetails player = {player} key = {player.id} addPlayer= {addPlayer}></PlayerDetails>)}
             </div>
             <div className="cart">
                 <div className="cart-length">
-                    <h4>Total Player Added: {cart.length}</h4>
+                    <h4 className="text-success">Total Player Added: {cart.length}</h4>
                 </div>
-                <div className="card-details">
+                <div id="cart-details">
                     <Cart cart = {cart}></Cart>
                 </div>
                 

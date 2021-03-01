@@ -5,7 +5,7 @@ import Player from './Player/Player';
 const Header = () => {
     return (
         <div className="header">
-            <h1 className="header-h1">This is Header.</h1>
+            <h1 className="header-h1">Player Selection Page:</h1>
             <Player></Player>
         </div>
     );

@@ -1,7 +1,15 @@
-.cart-player-div{
-    max-width: 300px;
+h4{
+    color: goldenrod;
 }
-.aa{
-    border: 1px solid black;
-    display: flex;
+.player-name{
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+}
+.player-salary{
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+}
+.total-budget{
+    margin:20px;
+    color: darkgoldenrod;
 }
